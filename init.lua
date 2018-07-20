@@ -15,23 +15,6 @@
   along with this program.  If not, see <https://www.gnu.org/licenses/>.
 --]]
 
-
--- window switch.
-switcher = hs.window.switcher.new(
-  hs.window.filter.new()
-    :setAppFilter('Emacs', {allowRoles = '*', allowTitles = 1}), -- make emacs window show in switcher list
-  {
-    showTitles = false,		-- don't show window title
-    thumbnailSize = 240,		-- window thumbnail size
-    showSelectedThumbnail = false,	-- don't show bigger thumbnail
-    backgroundColor = {0, 0, 0, 0.8}, -- background color
-    highlightColor = {0.5, 0.5, 0.5, 0.8}, -- selected color
-  }
-)
-hs.hotkey.bind("alt", "tab", function() switcher:next() end)
-hs.hotkey.bind("alt-shift", "tab", function() switcher:previous() end)
-
-
 -- window manager
 local win = require 'init-window'
 win:init()
