@@ -22,6 +22,9 @@ win:init()
 -- app manager
 local app = require 'lua/init-app'
 app:init()
+-- monitor manager
+local monitor = require 'lua/init-monitor'
+monitor:init()
 
 -- config auto reload.
 local load = require 'lua/init-reload'
