@@ -2,7 +2,6 @@
 local AutoReload = {}
 
 function AutoReload.reloadConfig(files)
-
   local doReload = falsed
 
   for _,file in pairs(files) do

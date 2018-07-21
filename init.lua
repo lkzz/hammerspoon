@@ -16,10 +16,13 @@
 --]]
 
 -- window manager
-local win = require 'init-window'
+local win = require 'lua/init-window'
 win:init()
 
+-- app manager
+local app = require 'lua/init-app'
+app:init()
 
 -- config auto reload.
-local load = require 'init-reload'
+local load = require 'lua/init-reload'
 load:init()
