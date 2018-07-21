@@ -10,12 +10,12 @@ local key2App = {
 }
 
 -- Toggle an application between being the frontmost app, and being hidden
-function AppManager.toggle(app)
-  local app = hs.application.find(app)
+function AppManager.toggle(appName)
+  local app = hs.application.find(appName)
 
   if not app then
     -- application not running, launch app
-    application.launchOrFocus(app)
+    hs.application.launchOrFocus(appName)
     return
   end
 
