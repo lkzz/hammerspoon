@@ -36,3 +36,10 @@ keybinds used in my config.
 | alt_cmd_w     | WeChat                         |
 | alt_cmd_i     | iTerm                          |
 | alt_cmd_g     | Google Chrome                  |
+
+#### screen
+| key       | operation                   |
+|-----------|-----------------------------|
+| alt_cmd_[ | switch to left screen       |
+| alt_cmd_] | switch to right screen      |
+| alt_cmd_o | switch focus to last screen |
