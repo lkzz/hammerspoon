@@ -26,6 +26,10 @@ app:init()
 local monitor = require 'lua/init-monitor'
 monitor:init()
 
+-- input method manager
+require 'lua/init-inputmethod'
+
 -- config auto reload.
 local load = require 'lua/init-reload'
 load:init()
+
