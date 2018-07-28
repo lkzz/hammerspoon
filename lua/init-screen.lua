@@ -1,9 +1,9 @@
-local MonitorManager = {}
+local ScreenMonitor = {}
 
 local hyper = {"alt", "cmd"}
 
 -- move application to screen
-function MonitorManager.move(win, direction)
+function ScreenMonitor.move(win, direction)
   if not win then
     return
   end
@@ -24,7 +24,7 @@ function isInScreen(screen, win)
 end
 
 -- focus to screen
-function MonitorManager.focus(screen)
+function ScreenMonitor.focus(screen)
   --Get windows within screen, ordered from front to back.
   --If no windows exist, bring focus to desktop. Otherwise, set focus on
   --front-most application window.
@@ -38,7 +38,7 @@ function MonitorManager.focus(screen)
 end
 
 
-function MonitorManager:init()
+function ScreenMonitor:init()
   -- move to left screen
   hs.hotkey.bind(hyper, "[", function()
                    self.move(hs.window.focusedWindow(), "left")
@@ -54,6 +54,12 @@ function MonitorManager:init()
                    self.focus(hs.window.focusedWindow():screen():next())
   end)
 
+  -- lock screen
+  hs.hotkey.bind({"cmd"}, "l", function()
+      hs.caffeinate.lockScreen()
+  end)
+
+
 end
 
-return MonitorManager
+return ScreenMonitor

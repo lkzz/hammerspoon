@@ -6,6 +6,12 @@ my personal hammerspoon config.
 - git clone https://github.com/lkzz/hammerspoon ~/.hammerspoon
 - reload config
 
+### feature
+- window manage
+- screen manage
+- auto inputmethod change
+- auto reload config
+
 ### keybinds
 keybinds used in my config.
 
@@ -43,3 +49,4 @@ keybinds used in my config.
 | alt_cmd_[ | switch to left screen       |
 | alt_cmd_] | switch to right screen      |
 | alt_cmd_o | switch focus to last screen |
+| cmd_l     | lock screen                 |

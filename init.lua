@@ -22,9 +22,9 @@ win:init()
 -- app manager
 local app = require 'lua/init-app'
 app:init()
--- monitor manager
-local monitor = require 'lua/init-monitor'
-monitor:init()
+-- screen manager
+local screen = require 'lua/init-screen'
+screen:init()
 
 -- input method manager
 require 'lua/init-inputmethod'
