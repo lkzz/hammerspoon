@@ -16,7 +16,7 @@ end
 
 set_app_input_method('Hammerspoon', English, hs.window.filter.windowCreated)
 set_app_input_method('Spotlight', English, hs.window.filter.windowCreated)
-set_app_input_method('Alfred', English, hs.window.filter.windowCreated)
+set_app_input_method('Alfred 3', English, hs.window.filter.windowCreated)
 set_app_input_method('Emacs', English)
 set_app_input_method('iTerm2', English)
 set_app_input_method('Google Chrome', English)
